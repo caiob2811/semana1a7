@@ -1,0 +1,48 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+      <title>Document</title>
+   </head>
+   <body>
+        <h1> dias da Semana</h1>
+        <form>
+            Digite o dia da semana entre 1 e 7: <br>
+            <input type="text" name="" id="dia">
+            <br></br>
+            <button onclick="calcular();return false;">Calcular</button>
+            <input type="reset" value="limpar formulário">
+            <br></br>
+        </form>
+</body>
+</html>
+<script>
+    function calcular() {
+        var diaj = parseInt(document.getElementById("dia").value);
+        switch (diaj) {
+            case 1:alert("Domingo");
+
+            break;
+            case 2: alert("Segunda-feira");
+
+            break;
+            case 3: alert("Terça-feira");
+           
+            break;
+            case 4: alert("Quarta-feira");
+           
+            break;
+            case 5: alert("Quinta-feira");
+           
+            break;
+            case 6: alert("Sexta-feira");
+
+            break;
+            case 7: alert("Sabado");
+            break;
+
+            default:alert("opção inválida");
+            break;
+        }
+    }
+</script>
